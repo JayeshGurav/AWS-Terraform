@@ -1,0 +1,51 @@
+Prerequisites- 
+    1. AWS free tier Account.
+    2. Terraform install (Latest Version).
+    3. Visual Studio Code.
+    4. Extension of AWS and Terraform.
+    5. Install AWS CLI tool on your local machine.
+    
+Step 1 - Create an user using AWS console. 
+            a. GO to the console.
+            b. Search as IAM in serach pannel.
+            c. Click o user and then click on create new user.
+            d. Give the name to the user.
+            e. Click on the attach policies directly. (Access policies will be - AmazonEC2FullAccess).
+            f. Click on the next and then Click on the next.
+             
+Step 2 - Create access keys for particular user #We create access keys for authentication. 
+            a. Click on the user and then select the user we have created.
+            b. Click on the Security Credentials.
+            c. Scroll down and serach for the Create access key then click on it.
+            d. We are going to use this access key only for Command line Interface (CLI) so click on it.
+            e. Tick the confirmation box available below and then lick on the Next.
+            f. Give the Access key description and click on the Create access key.
+            g. Download the CSV file.
+             
+Step 3 - Create an Folder for Terraform code. 
+
+Step 4 - Open the created folder in the Visual Studio Code. 
+
+Step 5 - Open the terminal in the VS code and Configure the AWS Account. 
+            a. Open the terminal and run the command "aws configure".
+            b. Provide the access key and secret as ask in the terminal. (Copy it from csv file that we have download from the AWS console.)
+            c. Select the appropriate region. (Recommended - Nearest region from you current location for better  experience.)
+
+Step 6 - Create main.tf file to write EC2 Instance configuration code using Terraform.
+            a. Copy the code from mentioned Github path and paste it in terminal.  
+            b. Run the Terraform command "terraform fmt" to allign the code in readable manner. 
+            c. Next run the terraform command "terraform init" to initiate the working directory. 
+            d. Next run the terraform command "terraform validate" to validate the written code. 
+            e. Next run the terraform command "terraform plan" to plan the configuration. 
+            f. Next run the terraform command "terraform apply" to deploy the changes on to the cloud platform. 
+            e. Check the AWS console whether our deployment is succesfully done or not. 
+            f. Next run the terraform command "terraform destroy" to delete or remove our changes from the aws platform. 
+
+Conclusion - By performing all 6 steps we succesfully deploy the EC2 instance.
+Note - If you face any difficulties or error while performing the steps do message me on linkedin or Email me.
+            linkedin Id - www.linkedin.com/in/jayesh-gurav-917334136
+            Email Id - jayesh.cloud14@gmail.com
+
+
+
+
